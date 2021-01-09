@@ -1,4 +1,4 @@
-,Kidney,Liver,Pancreas,Kidney / Pancreas,Heart,Lung,Heart / Lung,Intestine,Abdominal Wall,Head & Neck: Craniofacial,GU: Uterus,Upper Limb: Bilateral,Upper Limb: Unilateral,"Face, Scalp",Trachea
+,Kidney,Liver,Pancreas,Kidney_Pancreas,Heart,Lung,Heart_Lung,Intestine,Abdominal_Wall,Head_Neck,Uterus,Upper_Limb_Bilateral,Upper_Limb_Unilateral,Face_Scalp,Trachea
 All Center States,"91,578","11,979",885,"1,687","3,503",977,42,219,4,2,6,3,3,1,1
 Alabama,"1,094",103,5,8,23,11,0,0,0,0,0,0,0,0,0
 Arizona,"1,422",197,4,20,26,9,0,0,0,0,0,0,0,0,0
