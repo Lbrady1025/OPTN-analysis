@@ -31,7 +31,11 @@ app = Flask(__name__)
 
 #TO DO: Flask Routes
 ##########################################################
-
+@app.route("/")
+def init():
+    return (
+        "Test home page"
+    )
 
 
 if __name__ == '__main__':
