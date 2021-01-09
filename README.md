@@ -1,7 +1,7 @@
 # OPTN-analysis
-####CWRU Data Analytics Bootcamp Final Project. Uses machine learning to predict wait times for kidney transplants based on data from the Organ Procurement and Transplantation Network (OPTN)
+#### CWRU Data Analytics Bootcamp Final Project. Uses machine learning to predict wait times for kidney transplants based on data from the Organ Procurement and Transplantation Network (OPTN)
 
-###Team Members
+### Team Members
 Leah Brady
   * AWS
   * Flask
@@ -22,6 +22,6 @@ Tana Zimmer
   * Load data into Postgres, connect to AWS
   * HTML/CSS
   
-##Sources
+## Sources
   * https://www.donatelife.net/types-of-donation/kidney-donation/
   * https://optn.transplant.hrsa.gov/data/view-data-reports/national-data/
