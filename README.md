@@ -2,19 +2,23 @@
 #### CWRU Data Analytics Bootcamp Final Project. Uses machine learning to predict wait times for kidney transplants based on data from the Organ Procurement and Transplantation Network (OPTN)
 
 ### Team Members
+
 Leah Brady
   * AWS
   * Flask
   * Load ML model and run predictions on user-form data
   * Read predictions from ML to JSON
+  
 Ravindra Patel
   * D3
   * JavaScript
   * User Input form (JS, HTML)
+  
 Robert Payne
   * Build machine learning model
   * Train machine learning model
   * Gather data and clean CSVs
+  
 Tana Zimmer
   * Gather data and clean CSVs in Pandas
   * Write schema
