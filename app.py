@@ -23,8 +23,12 @@ Base = automap_base()
 #Reflect tables
 Base.prepare(engine, reflect=True)
 
-#TO DO: Save table references
-###########################################################
+#Save table references
+kidney_removal_state_ethnicity = Base.classes.kidney_removal_state_ethnicity_cleaned
+kidney_state_donor = Base.classes.kidney_state_donor_cleaned
+kidney_state_race_abo = Base.classes.kidney_state_race_abo_cleaned
+kidney_waitlist_additions = Base.classes.kidney_waitlist_additions_cleaned
+transplant_state_kidney = Base.classes.transplant_state_kidney_cleaned
 
 #Flask setup
 app = Flask(__name__)
