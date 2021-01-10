@@ -41,6 +41,17 @@ def init():
         "Test home page"
     )
 
+@app.route("/api")
+def api_routes():
+    return(
+        f"Available Routes:<br/>"
+        f"/api/v1.0/kidney_removal_state_ethnicity<br/>"
+        f"/api/v1.0/kidney_state_donor<br/>"
+        f"/api/v1.0/kidney_state_race_abo<br/>"
+        f"/api/v1.0/kidney_waitlist_additions<br/>"
+        f"/api/v1.0/transplant_state_kidney<br/>"
+    )
+
 
 if __name__ == '__main__':
     app.run(debug=True)
