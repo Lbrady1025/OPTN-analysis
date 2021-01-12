@@ -10,7 +10,9 @@ from sqlalchemy import create_engine, func
 
 from config import db_pwd
 
-from flask import Flask, jsonify
+from flask import Flask, request, jsonify, render_template
+
+from tensorflow.keras.models import load_models
 
 #Create connection to database
 db_path = f"postgres:{db_pwd}@optn-analysis.cwcmoauclg7w.us-east-2.rds.amazonaws.com/optn"
@@ -37,21 +39,29 @@ app = Flask(__name__)
 ##########################################################
 @app.route("/")
 def init():
-    return (
-        "Test home page"
-    )
+    return render_template('index.html')
 
-@app.route("/api")
+@app.route("/apis")
 def api_routes():
     return(
         f"Available Routes:<br/>"
+        f"/api/v1.0/predict<br/>"
         f"/api/v1.0/kidney_removal_state_ethnicity<br/>"
         f"/api/v1.0/kidney_state_donor<br/>"
         f"/api/v1.0/kidney_state_race_abo<br/>"
         f"/api/v1.0/kidney_waitlist_additions<br/>"
-        f"/api/v1.0/transplant_state_kidney<br/>"
+        f"/api/v1.0/transplant_state_kidney"
     )
 
+@app.route("/api/v1.0/predict")
+def predict():
+    model = load_models("Bobs_model.h5")
+
+    user_input = [x for x in request.form.values()]
+    features = [np.array(user_input)]
+    prediction = model.predict(features)
+
+    return jsonify(prediction)
 
 if __name__ == '__main__':
     app.run(debug=True)
