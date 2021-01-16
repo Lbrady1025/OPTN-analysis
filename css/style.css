@@ -1106,6 +1106,32 @@
 				margin-bottom: 1.75em;
 			}
 
+			#visualbanner {
+				background-image: url(../images/dark_tint.png), url(../images/visualbanner.jpg);
+				background-position: center center;
+				background-size: cover;
+				color: #ffffff;
+				padding: 14em 0em 14em;
+				text-align: center;
+			}
+		
+				#visualbanner :last-child {
+					margin-bottom: 0;
+				}
+		
+				#visualbanner h2 {
+					color: #ffffff;
+					font-size: 4em;
+					line-height: 1.25em;
+					margin: 0 0 0.5em 0;
+					padding: 0;
+				}
+		
+				#visualbanner p {
+					font-size: 1.5em;
+					margin-bottom: 1.75em;
+				}
+
 /* Wrapper */
 
 	.wrapper {
