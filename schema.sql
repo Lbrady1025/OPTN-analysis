@@ -11,6 +11,7 @@ DROP TABLE transplant_state_kidney_cleaned;
 DROP TABLE transplant_state_liver_cleaned;
 DROP TABLE transplant_state_lung_cleaned;
 DROP TABLE waiting_time_cleaned;
+DROP TABLE diabetes_state_cleaned;
 
 CREATE TABLE "kidney_removal_state_abo_cleaned" (
     id SERIAL PRIMARY KEY,
@@ -392,23 +393,63 @@ CREATE TABLE "waiting_time_cleaned" (
     "Trachea" int   NOT NULL
 );
 
-ALTER TABLE "kidney_removal_state_abo_cleaned" ADD CONSTRAINT "fk_kidney_removal_state_abo_cleaned_Removal_Reason_State_removal_category" FOREIGN KEY("Removal_Reason", "State", "removal_category")
-REFERENCES "kidney_removal_state_ethnicity_cleaned" ("Removal_Reason", "State", "removal_category");
 
-ALTER TABLE "kidney_removal_state_abo_cleaned" ADD CONSTRAINT "fk_kidney_removal_state_abo_cleaned_ABO" FOREIGN KEY("ABO")
-REFERENCES "kidney_state_race_abo_cleaned" ("ABO");
+CREATE TABLE "diabetes_state_cleaned" (
+    id SERIAL PRIMARY KEY,
+    "State" varchar(50)   NOT NULL,
+    "1995" float   NOT NULL,
+    "1996" float   NOT NULL,
+    "1997" float   NOT NULL,
+    "1998" float   NOT NULL,
+    "1999" float   NOT NULL,
+    "2000" float   NOT NULL,
+    "2001" float   NOT NULL,
+    "2002" float   NOT NULL,
+    "2003" float   NOT NULL,
+    "2004" float   NOT NULL,
+    "2005" float   NOT NULL,
+    "2006" float   NOT NULL,
+    "2007" float   NOT NULL,
+    "2008" float   NOT NULL,
+    "2009" float   NOT NULL,
+    "2010" float   NOT NULL,
+    "2011" float   NOT NULL,
+    "2012" float   NOT NULL,
+    "2013" float   NOT NULL,
+    "2014" float   NOT NULL,
+    "2015" float   NOT NULL,
+    "2016" float   NOT NULL,
+    "2017" float   NOT NULL,
+    "2018" float   NOT NULL,
+	"2019" float   NOT NULL		
+);
 
-ALTER TABLE "kidney_state_race_abo_cleaned" ADD CONSTRAINT "fk_kidney_state_race_abo_cleaned_Race_State" FOREIGN KEY("Race", "State")
-REFERENCES "kidney_removal_state_ethnicity_cleaned" ("Ethnicity", "State");
-
-ALTER TABLE "kidney_state_race_abo_cleaned" ADD CONSTRAINT "fk_kidney_state_race_abo_cleaned_ABO" FOREIGN KEY("ABO")
-REFERENCES "kidney_state_race_abo_cleaned" ("ABO");
-
-ALTER TABLE "kidney_state_donor_cleaned" ADD CONSTRAINT "fk_kidney_state_donor_cleaned_State" FOREIGN KEY("State")
-REFERENCES "kidney_removal_state_ethnicity_cleaned" ("State");
-
-ALTER TABLE "kidney_waitlist_additions_cleaned" ADD CONSTRAINT "fk_kidney_waitlist_additions_cleaned_ABO" FOREIGN KEY("ABO")
-REFERENCES "kidney_state_race_abo_cleaned" ("ABO");
-
-ALTER TABLE "kidney_waitlist_additions_cleaned" ADD CONSTRAINT "fk_kidney_waitlist_additions_cleaned_Ethnicity" FOREIGN KEY("Ethnicity")
-REFERENCES "kidney_removal_state_ethnicity_cleaned" ("Ethnicity");
+CREATE TABLE "obesity_state_cleaned" (
+    id SERIAL PRIMARY KEY,
+    "State" varchar(50)   NOT NULL,
+    "1995" float   NOT NULL,
+    "1996" float   NOT NULL,
+    "1997" float   NOT NULL,
+    "1998" float   NOT NULL,
+    "1999" float   NOT NULL,
+    "2000" float   NOT NULL,
+    "2001" float   NOT NULL,
+    "2002" float   NOT NULL,
+    "2003" float   NOT NULL,
+    "2004" float   NOT NULL,
+    "2005" float   NOT NULL,
+    "2006" float   NOT NULL,
+    "2007" float   NOT NULL,
+    "2008" float   NOT NULL,
+    "2009" float   NOT NULL,
+    "2010" float   NOT NULL,
+    "2011" float   NOT NULL,
+    "2012" float   NOT NULL,
+    "2013" float   NOT NULL,
+    "2014" float   NOT NULL,
+    "2015" float   NOT NULL,
+    "2016" float   NOT NULL,
+    "2017" float   NOT NULL,
+    "2018" float   NOT NULL,
+	"2019" float   NOT NULL		
+);
