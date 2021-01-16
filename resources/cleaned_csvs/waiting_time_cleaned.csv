@@ -1,10 +1,10 @@
-Unnamed: 0,All Organs,Kidney,Liver,Pancreas,Kidney / Pancreas,Heart,Lung,Heart / Lung,Intestine,Abdominal Wall,Head & Neck: Craniofacial,GU: Uterus,Upper Limb: Bilateral,Upper Limb: Unilateral,"Face, Scalp",Trachea
- All Time,"108,269","91,578","11,979",885,"1,687","3,503",977,42,219,4,2,6,3,3,1,1
- < 30 Days,"3,965","2,830",716,29,91,274,160,4,10,0,0,0,0,0,0,0
- 30 to < 90 Days,"7,513","5,687","1,215",68,183,407,175,6,17,0,0,0,0,0,0,0
- 90 Days to < 6 Months,"9,676","7,582","1,489",83,212,443,130,6,17,0,0,0,0,0,0,0
- 6 Months to < 1 Year,"14,907","12,145","2,051",110,309,504,143,8,35,1,0,0,2,0,0,0
- 1 Year to < 2 Years,"25,951","22,344","2,523",200,450,751,205,7,27,1,1,2,0,1,0,1
- 2 Years to < 3 Years,"17,363","15,386","1,302",120,188,522,95,3,22,2,1,4,1,1,0,0
- 3 Years to < 5 Years,"18,551","16,708","1,297",135,167,393,50,1,34,0,0,0,0,1,1,0
- 5 or More Years,"15,679","13,775","1,496",144,119,235,27,7,59,0,0,0,0,0,0,0
+,Wait_Time,All_Organs,Kidney,Liver,Pancreas,Kidney_Pancreas,Heart,Lung,Heart_Lung,Intestine,Abdominal_Wall,Head_Neck,Uterus,Upper_Limb_Bilateral,Upper_Limb_Unilateral,Face_Scalp,Trachea
+0, All Time,108269,91578,11979,885,1687,3503,977,42,219,4,2,6,3,3,1,1
+1, < 30 Days,3965,2830,716,29,91,274,160,4,10,0,0,0,0,0,0,0
+2, 30 to < 90 Days,7513,5687,1215,68,183,407,175,6,17,0,0,0,0,0,0,0
+3, 90 Days to < 6 Months,9676,7582,1489,83,212,443,130,6,17,0,0,0,0,0,0,0
+4, 6 Months to < 1 Year,14907,12145,2051,110,309,504,143,8,35,1,0,0,2,0,0,0
+5, 1 Year to < 2 Years,25951,22344,2523,200,450,751,205,7,27,1,1,2,0,1,0,1
+6, 2 Years to < 3 Years,17363,15386,1302,120,188,522,95,3,22,2,1,4,1,1,0,0
+7, 3 Years to < 5 Years,18551,16708,1297,135,167,393,50,1,34,0,0,0,0,1,1,0
+8, 5 or More Years,15679,13775,1496,144,119,235,27,7,59,0,0,0,0,0,0,0
