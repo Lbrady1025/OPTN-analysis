@@ -1,4 +1,4 @@
-﻿DROP TABLE kidney_removal_state_abo_cleaned;
+DROP TABLE kidney_removal_state_abo_cleaned;
 DROP TABLE kidney_removal_state_ethnicity_cleaned;
 DROP TABLE kidney_state_donor_cleaned;
 DROP TABLE kidney_state_race_abo_cleaned;

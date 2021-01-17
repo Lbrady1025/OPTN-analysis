@@ -805,6 +805,7 @@
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
+		margin:5px
 	}
 
 		input[type="submit"]:hover,
@@ -1131,6 +1132,32 @@
 					font-size: 1.5em;
 					margin-bottom: 1.75em;
 				}
+
+				#ribbonbanner {
+					background-image: url(../images/dark_tint.png), url(../images/ribbonbanner.jpg);
+					background-position: center center;
+					background-size: cover;
+					color: #ffffff;
+					padding: 14em 0em 14em;
+					text-align: center;
+				}
+			
+					#ribbonbanner :last-child {
+						margin-bottom: 0;
+					}
+			
+					#ribbonbanner h2 {
+						color: #ffffff;
+						font-size: 4em;
+						line-height: 1.25em;
+						margin: 0 0 0.5em 0;
+						padding: 0;
+					}
+			
+					#ribbonbanner p {
+						font-size: 1.5em;
+						margin-bottom: 1.75em;
+					}
 
 /* Wrapper */
 
