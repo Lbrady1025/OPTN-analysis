@@ -45,8 +45,27 @@
         <!-- Data Dictionary Content -->
 			<section id="main" class="wrapper">
 				<div class="container">
-                    <h3>Database and Hosting</h3>
+                    <h2>Database and Hosting</h2>
                     <p>The data used for this project was stored in a relational database using SQL and hosted on AWS RDS. Access to the database is available upon request.</p>
+                    <h4>Jump to a Table:</h4>
+                    <select name="dropdown" id="select-anchor">
+                        <option value="#select-anchor">Select Table</option>
+                        <option value="#kidney_removal_state_abo_cleaned">kidney_removal_state_abo_cleaned</option>
+                        <option value="#kidney_removal_state_ethnicity_cleaned">kidney_removal_state_ethnicity_cleaned</option>
+                        <option value="#kidney_state_donor_cleaned">kidney_state_donor_cleaned</option>
+                        <option value="#kidney_state_race_abo_cleaned">kidney_state_race_abo_cleaned</option>
+                        <option value="#kidney_waitlist_additions_cleaned">kidney_waitlist_additions_cleaned</option>
+                        <option value="#transplant_state_heart_cleaned">transplant_state_heart_cleaned</option>
+                        <option value="#transplant_state_kidney_cleaned">transplant_state_kidney_cleaned</option>
+                        <option value="#transplant_state_liver_cleaned">transplant_state_liver_cleaned</option>
+                        <option value="#transplant_state_lung_cleaned">transplant_state_lung_cleaned</option>
+                        <option value="#waitinglist_state_cleaned">waitinglist_state_cleaned</option>
+                        <option value="#waiting_time_cleaned">waiting_time_cleaned</option>
+                        <option value="#diabetes_state_cleaned">diabetes_state_cleaned</option>
+                        <option value="#obesity_state_cleaned">obesity_state_cleaned</option>
+                        <option value="#overdose_state_cleaned">overdose_state_cleaned</option>
+                    </select>
+                    <br>
                     <table border="1">
                         <thead>
                             <tr>
@@ -60,7 +79,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>kidney_removal_state_abo_cleaned</td>
+                                <td id="kidney_removal_state_abo_cleaned">kidney_removal_state_abo_cleaned</td>
                                 <td>Removal_Reason</td>
                                 <td>Reason kidney was removed</td>
                                 <td>VARCHAR</td>
@@ -308,7 +327,7 @@
                                 <td>Yes</td>
                             </tr>
                             <tr>
-                                <td>kidney_removal_state_ethnicity_cleaned</td>
+                                <td id="kidney_removal_state_ethnicity_cleaned">kidney_removal_state_ethnicity_cleaned</td>
                                 <td>Removal_Reason</td>
                                 <td>Reason kidney was removed</td>
                                 <td>VARCHAR</td>
@@ -556,7 +575,7 @@
                                 <td>Yes</td>
                             </tr>
                             <tr>
-                                <td>kidney_state_donor_cleaned</td>
+                                <td id="kidney_state_donor_cleaned">kidney_state_donor_cleaned</td>
                                 <td>State</td>
                                 <td>State of residence of kidney donor</td>
                                 <td>VARCHAR</td>
@@ -836,7 +855,7 @@
                                 <td>No</td>
                             </tr>
                             <tr>
-                                <td>kidney_state_race_abo_cleaned</td>
+                                <td id="kidney_state_race_abo_cleaned">kidney_state_race_abo_cleaned</td>
                                 <td>Race</td>
                                 <td>Race of kidney recipient</td>
                                 <td>VARCHAR</td>
@@ -1124,7 +1143,7 @@
                                 <td>No</td>
                             </tr>
                             <tr>
-                                <td>kidney_waitlist_additions_cleaned</td>
+                                <td id="kidney_waitlist_additions_cleaned">kidney_waitlist_additions_cleaned</td>
                                 <td>State</td>
                                 <td>State of residence of individual added to the kidney waitlist</td>
                                 <td>VARCHAR</td>
@@ -1364,7 +1383,7 @@
                                 <td>No</td>
                             </tr>
                             <tr>
-                                <td>transplant_state_heart_cleaned</td>
+                                <td id="transplant_state_heart_cleaned">transplant_state_heart_cleaned</td>
                                 <td>State</td>
                                 <td>State where heart transplant took place</td>
                                 <td>VARCHAR</td>
@@ -1636,7 +1655,7 @@
                                 <td>No</td>
                             </tr>
                             <tr>
-                                <td>transplant_state_kidney_cleaned</td>
+                                <td id="transplant_state_kidney_cleaned">transplant_state_kidney_cleaned</td>
                                 <td>State</td>
                                 <td>State where kidney transplant took place</td>
                                 <td>VARCHAR</td>
@@ -1907,7 +1926,7 @@
                                 <td>N/A</td>
                                 <td>No</td>
                             </tr>
-                                                            <td>transplant_state_kidney_cleaned</td>
+                                <td id="transplant_state_kidney_cleaned">transplant_state_kidney_cleaned</td>
                                 <td>State</td>
                                 <td>State where kidney transplant took place</td>
                                 <td>VARCHAR</td>
@@ -2179,7 +2198,7 @@
                                 <td>No</td>
                             </tr>
                         <tr>
-                            <td>transplant_state_liver_cleaned</td>
+                            <td id="transplant_state_liver_cleaned">transplant_state_liver_cleaned</td>
                             <td>State</td>
                             <td>State where liver transplant took place</td>
                             <td>VARCHAR</td>
@@ -2451,7 +2470,7 @@
                             <td>No</td>
                         </tr>
                         <tr>
-                            <td>transplant_state_lung_cleaned</td>
+                            <td id="transplant_state_lung_cleaned">transplant_state_lung_cleaned</td>
                             <td>State</td>
                             <td>State where lung transplant took place</td>
                             <td>VARCHAR</td>
@@ -2723,7 +2742,7 @@
                             <td>No</td>
                         </tr>
                         <tr>
-                            <td>waitinglist_state_cleaned</td>
+                            <td id="waitinglist_state_cleaned">waitinglist_state_cleaned</td>
                             <td>State</td>
                             <td>State of residence of individual on the waiting list</td>
                             <td>VARCHAR</td>
@@ -2851,7 +2870,7 @@
                             <td>No</td>
                         </tr>
                         <tr>
-                            <td>waiting_time_cleaned</td>
+                            <td id="waiting_time_cleaned">waiting_time_cleaned</td>
                             <td>Wait_Time</td>
                             <td>Wait time ranges for individuals on the waitlist (e.g., < 30 days, 30 days to < 90 days)</td>
                             <td>VARCHAR</td>
@@ -2987,7 +3006,7 @@
                             <td>No</td>
                         </tr>
                         <tr>
-                            <td>diabetes_state_cleaned</td>
+                            <td id="diabetes_state_cleaned">diabetes_state_cleaned</td>
                             <td>State</td>
                             <td>State where diabetes rate is given</td>
                             <td>VARCHAR</td>
@@ -3195,7 +3214,7 @@
                             <td>No</td>
                         </tr>
                         <tr>
-                            <td>obesity_state_cleaned</td>
+                            <td id="obesity_state_cleaned">obesity_state_cleaned</td>
                             <td>State</td>
                             <td>State where obesity rate is given</td>
                             <td>VARCHAR</td>
@@ -3403,7 +3422,7 @@
                             <td>No</td>
                         </tr>
                         <tr>
-                            <td>overdose_state_cleaned</td>
+                            <td id="overdose_state_cleaned">overdose_state_cleaned</td>
                             <td>State</td>
                             <td>State where opioid overdoses per 100,000 is given</td>
                             <td>VARCHAR</td>
@@ -3598,6 +3617,6 @@
 					</div>
 				</div>
 			</footer>
-
+        <script src="static/js/select_anchor.js"></script>
 	</body>
 </html>
