@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+	Transit by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Choose Your State</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/dropdown.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+			<link rel="stylesheet" href="css/dropdown_style.css" />
+		</noscript>
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html">Home Page</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="visualizations.html">Visualizations</a></li>
+						<li><a href="data.html">Data Sources</a></li>
+						<li><a href="donate.html">Make A Difference</a></li>
+						<li><a href="https://github.com/Lbrady1025/OPTN-analysis" target="_blank" class="button special">GitHub</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="mapbanner">
+				<h2>See Your State's Projections</h2>
+				<p>Check Projections in your individual state</p>
+				<ul class="actions">
+				</ul>
+			</section>
+
+			<!-- body -->
+			<center>
+			<br><br>
+			<h2>Search below to see projections for your state.</h2>
+			<p>See projections for diabetes, obesity, and kidney transplant waitlist numbers.</p>
+			
+			<!-- Drop Down -->
+			<select onchange="$('#imageToSwap').attr('src', this.options[this.selectedIndex].value);">
+				<option value="images/USMap.png">Select State</option>
+				<option value="images/graph1.png">Alabama</option>
+				<option value="images/graph2.png">Alaska</option>
+				<option value="images/graph3.png">Arizona</option>
+				<option value="images/">Arkansas</option>
+				<option value="images/">California</option>
+				<option value="images/">Colorado</option>
+				<option value="images/">Connecticut</option>
+				<option value="images/">Delaware</option>
+				<option value="images/">Florida</option>
+				<option value="images/">Georgia</option>
+				<option value="images/">Hawaii</option>
+				<option value="images/">Idaho</option>
+				<option value="images/">Illinois</option>
+				<option value="images/">Indiana</option>
+				<option value="images/">Iowa</option>
+				<option value="images/">Kansas</option>
+				<option value="images/">Louisiana</option>
+				<option value="images/">Maine</option>
+				<option value="images/">Maryland</option>
+				<option value="images/">Massachusetts</option>
+				<option value="images/">Michigan</option>
+				<option value="images/">Minnesota</option>
+				<option value="images/">Mississippi</option>
+				<option value="images/">Missouri</option>
+				<option value="images/">Montana</option>
+				<option value="images/">Nebraska</option>
+				<option value="images/">Nevada</option>
+				<option value="images/">New Hampshire</option>
+				<option value="images/">New Jersey</option>
+				<option value="images/">New Mexico</option>
+				<option value="images/">New York</option>
+				<option value="images/">North Carolina</option>
+				<option value="images/">North Dakota</option>
+				<option value="images/">Ohio</option>
+				<option value="images/">Oklahoma</option>
+				<option value="images/">Oregon</option>
+				<option value="images/">Pennsylvania</option>
+				<option value="images/">Rhode Island</option>
+				<option value="images/">South Carolina</option>
+				<option value="images/">South Dakota</option>
+				<option value="images/">Tennessee</option>
+				<option value="images/">Texas</option>
+				<option value="images/">Utah</option>
+				<option value="images/">Vermont</option>
+				<option value="images/">Virginia</option>
+				<option value="images/">Washington</option>
+				<option value="images/">West Virginia</option>
+				<option value="images/">Wisconsin</option>
+				<option value="images/">Wyoming</option>
+			
+
+			</select>
+			  
+			<br><br>
+			
+			<img id="imageToSwap" class="profile" src="images/USMap.png" >
+			<!-- add width and height here^^^ -->
+			</center>
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="container">
+				<section class="links">
+					<div class="row">
+
+					</div>
+				</section>
+					<center>
+					<p>Final Project by Leah Brady, Ravindra Patel, Robert Payne, and Tana Zimmer<br>
+					CWRU Data Analytics and Visualization Bootcamp 2020-2021</p>
+					</center>			
+					<div class="row">
+					<div class="8u 12u$(medium)">
+						<ul class="copyright">
+							<li>&copy; Untitled. All rights reserved.</li>
+							<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+							<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>
