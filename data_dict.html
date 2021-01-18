@@ -1,0 +1,3622 @@
+<!DOCTYPE html>
+<!--
+	Transit by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Data Dictionary</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html">Home Page</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="visualizations.html">Visualizations</a></li>
+						<li><a href="data.html">Data Sources</a></li>
+						<li><a href="donate.html">Make A Difference</a></li>
+						<li><a href="https://github.com/Lbrady1025/OPTN-analysis" target="_blank" class="button special">GitHub</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h2>Data Dictionary</h2>
+				<p>Information about database structure and description of data.</p>
+			</section>
+        <!-- Data Dictionary Content -->
+			<section id="main" class="wrapper">
+				<div class="container">
+                    <h2>Database and Hosting</h2>
+                    <p>The data used for this project was stored in a relational database using SQL and hosted on AWS RDS. Access to the database is available upon request.</p>
+                    <h4>Jump to a Table:</h4>
+                    <select name="dropdown" id="select-anchor">
+                        <option value="#select-anchor">Select Table</option>
+                        <option value="#kidney_removal_state_abo_cleaned">kidney_removal_state_abo_cleaned</option>
+                        <option value="#kidney_removal_state_ethnicity_cleaned">kidney_removal_state_ethnicity_cleaned</option>
+                        <option value="#kidney_state_donor_cleaned">kidney_state_donor_cleaned</option>
+                        <option value="#kidney_state_race_abo_cleaned">kidney_state_race_abo_cleaned</option>
+                        <option value="#kidney_waitlist_additions_cleaned">kidney_waitlist_additions_cleaned</option>
+                        <option value="#transplant_state_heart_cleaned">transplant_state_heart_cleaned</option>
+                        <option value="#transplant_state_kidney_cleaned">transplant_state_kidney_cleaned</option>
+                        <option value="#transplant_state_liver_cleaned">transplant_state_liver_cleaned</option>
+                        <option value="#transplant_state_lung_cleaned">transplant_state_lung_cleaned</option>
+                        <option value="#waitinglist_state_cleaned">waitinglist_state_cleaned</option>
+                        <option value="#waiting_time_cleaned">waiting_time_cleaned</option>
+                        <option value="#diabetes_state_cleaned">diabetes_state_cleaned</option>
+                        <option value="#obesity_state_cleaned">obesity_state_cleaned</option>
+                        <option value="#overdose_state_cleaned">overdose_state_cleaned</option>
+                    </select>
+                    <br>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Name of Table</th>
+                                <th>Column Name</th>
+                                <th>Description</th>
+                                <th>Data Type</th>
+                                <th>Character Length</th>
+                                <th>Accepts Null Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="kidney_removal_state_abo_cleaned">kidney_removal_state_abo_cleaned</td>
+                                <td>Removal_Reason</td>
+                                <td>Reason kidney was removed</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>State</td>
+                                <td>US state where kidney was removed</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>ABO</td>
+                                <td>Blood type of kidney removal patient</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>To_Date</td>
+                                <td>Total number of kidney removals to date data was obtained (12/2020)</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2020</td>
+                                <td>Number of kidney removals in 2020</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2019</td>
+                                <td>Number of kidney removals in 2019</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2018</td>
+                                <td>Number of kidney removals in 2018</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2017</td>
+                                <td>Number of kidney removals in 2017</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2016</td>
+                                <td>Number of kidney removals in 2016</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2015</td>
+                                <td>Number of kidney removals in 2015</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2014</td>
+                                <td>Number of kidney removals in 2014</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2013</td>
+                                <td>Number of kidney removals in 2013</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2012</td>
+                                <td>Number of kidney removals in 2012</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2011</td>
+                                <td>Number of kidney removals in 2011</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2010</td>
+                                <td>Number of kidney removals in 2010</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2009</td>
+                                <td>Number of kidney removals in 2009</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2008</td>
+                                <td>Number of kidney removals in 2008</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2007</td>
+                                <td>Number of kidney removals in 2007</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2006</td>
+                                <td>Number of kidney removals in 2006</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2005</td>
+                                <td>Number of kidney removals in 2005</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2004</td>
+                                <td>Number of kidney removals in 2004</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2003</td>
+                                <td>Number of kidney removals in 2003</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2002</td>
+                                <td>Number of kidney removals in 2002</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2001</td>
+                                <td>Number of kidney removals in 2001</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2000</td>
+                                <td>Number of kidney removals in 2000</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1999</td>
+                                <td>Number of kidney removals in 1999</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1998</td>
+                                <td>Number of kidney removals in 1998</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1997</td>
+                                <td>Number of kidney removals in 1997</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1996</td>
+                                <td>Number of kidney removals in 1996</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1995</td>
+                                <td>Number of kidney removals in 1995</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>removal_category</td>
+                                <td>Type of kidney removal that was performed (i.e., total)</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td id="kidney_removal_state_ethnicity_cleaned">kidney_removal_state_ethnicity_cleaned</td>
+                                <td>Removal_Reason</td>
+                                <td>Reason kidney was removed</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>State</td>
+                                <td>US state where kidney was removed</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Ethnicity</td>
+                                <td>Ethnicity of kidney removal patient</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>To_Date</td>
+                                <td>Total number of kidney removals to date data was obtained (12/2020)</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2020</td>
+                                <td>Number of kidney removals in 2020</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2019</td>
+                                <td>Number of kidney removals in 2019</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2018</td>
+                                <td>Number of kidney removals in 2018</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2017</td>
+                                <td>Number of kidney removals in 2017</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2016</td>
+                                <td>Number of kidney removals in 2016</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2015</td>
+                                <td>Number of kidney removals in 2015</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2014</td>
+                                <td>Number of kidney removals in 2014</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2013</td>
+                                <td>Number of kidney removals in 2013</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2012</td>
+                                <td>Number of kidney removals in 2012</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2011</td>
+                                <td>Number of kidney removals in 2011</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2010</td>
+                                <td>Number of kidney removals in 2010</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2009</td>
+                                <td>Number of kidney removals in 2009</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2008</td>
+                                <td>Number of kidney removals in 2008</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2007</td>
+                                <td>Number of kidney removals in 2007</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2006</td>
+                                <td>Number of kidney removals in 2006</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2005</td>
+                                <td>Number of kidney removals in 2005</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2004</td>
+                                <td>Number of kidney removals in 2004</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2003</td>
+                                <td>Number of kidney removals in 2003</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2002</td>
+                                <td>Number of kidney removals in 2002</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2001</td>
+                                <td>Number of kidney removals in 2001</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2000</td>
+                                <td>Number of kidney removals in 2000</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1999</td>
+                                <td>Number of kidney removals in 1999</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1998</td>
+                                <td>Number of kidney removals in 1998</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1997</td>
+                                <td>Number of kidney removals in 1997</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1996</td>
+                                <td>Number of kidney removals in 1996</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1995</td>
+                                <td>Number of kidney removals in 1995</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>removal_category</td>
+                                <td>Type of kidney removal that was performed (i.e., total)</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td id="kidney_state_donor_cleaned">kidney_state_donor_cleaned</td>
+                                <td>State</td>
+                                <td>State of residence of kidney donor</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Deceased_Living</td>
+                                <td>Indicates whether the donor was living or deceased at the time of donation</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2020</td>
+                                <td>Number of kidney donations in 2020</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2019</td>
+                                <td>Number of kidney donations in 2019</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2018</td>
+                                <td>Number of kidney donations in 2018</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2017</td>
+                                <td>Number of kidney donations in 2017</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2016</td>
+                                <td>Number of kidney donations in 2016</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2015</td>
+                                <td>Number of kidney donations in 2015</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2014</td>
+                                <td>Number of kidney donations in 2014</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2013</td>
+                                <td>Number of kidney donations in 2013</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2012</td>
+                                <td>Number of kidney donations in 2012</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2011</td>
+                                <td>Number of kidney donations in 2011</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2010</td>
+                                <td>Number of kidney donations in 2010</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2009</td>
+                                <td>Number of kidney donations in 2009</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2008</td>
+                                <td>Number of kidney donations in 2008</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2007</td>
+                                <td>Number of kidney donations in 2007</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2006</td>
+                                <td>Number of kidney donations in 2006</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2005</td>
+                                <td>Number of kidney donations in 2005</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2004</td>
+                                <td>Number of kidney donations in 2004</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2003</td>
+                                <td>Number of kidney donations in 2003</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2002</td>
+                                <td>Number of kidney donations in 2002</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2001</td>
+                                <td>Number of kidney donations in 2001</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2000</td>
+                                <td>Number of kidney donations in 2000</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1999</td>
+                                <td>Number of kidney donations in 1999</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1998</td>
+                                <td>Number of kidney donations in 1998</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1997</td>
+                                <td>Number of kidney donations in 1997</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1996</td>
+                                <td>Number of kidney donations in 1996</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1995</td>
+                                <td>Number of kidney donations in 1995</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1994</td>
+                                <td>Number of kidney donations in 1994</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1993</td>
+                                <td>Number of kidney donations in 1993</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1992</td>
+                                <td>Number of kidney donations in 1992</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1991</td>
+                                <td>Number of kidney donations in 1991</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1990</td>
+                                <td>Number of kidney donations in 1990</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1989</td>
+                                <td>Number of kidney donations in 1989</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1988</td>
+                                <td>Number of kidney donations in 1988</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td id="kidney_state_race_abo_cleaned">kidney_state_race_abo_cleaned</td>
+                                <td>Race</td>
+                                <td>Race of kidney recipient</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>State</td>
+                                <td>State of residence of kidney recipient</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>ABO</td>
+                                <td>Blood type of the kidney recipient</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2020</td>
+                                <td>Number of kidney recipients in 2020</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2019</td>
+                                <td>Number of kidney recipients in 2019</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2018</td>
+                                <td>Number of kidney recipients in 2018</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2017</td>
+                                <td>Number of kidney recipients in 2017</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2016</td>
+                                <td>Number of kidney recipients in 2016</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2015</td>
+                                <td>Number of kidney recipients in 2015</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2014</td>
+                                <td>Number of kidney recipients in 2014</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2013</td>
+                                <td>Number of kidney recipients in 2013</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2012</td>
+                                <td>Number of kidney recipients in 2012</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2011</td>
+                                <td>Number of kidney recipients in 2011</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2010</td>
+                                <td>Number of kidney recipients in 2010</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2009</td>
+                                <td>Number of kidney recipients in 2009</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2008</td>
+                                <td>Number of kidney recipients in 2008</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2007</td>
+                                <td>Number of kidney recipients in 2007</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2006</td>
+                                <td>Number of kidney recipients in 2006</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2005</td>
+                                <td>Number of kidney recipients in 2005</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2004</td>
+                                <td>Number of kidney recipients in 2004</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2003</td>
+                                <td>Number of kidney recipients in 2003</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2002</td>
+                                <td>Number of kidney recipients in 2002</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2001</td>
+                                <td>Number of kidney recipients in 2001</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2000</td>
+                                <td>Number of kidney recipients in 2000</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1999</td>
+                                <td>Number of kidney recipients in 1999</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1998</td>
+                                <td>Number of kidney recipients in 1998</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1997</td>
+                                <td>Number of kidney recipients in 1997</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1996</td>
+                                <td>Number of kidney recipients in 1996</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1995</td>
+                                <td>Number of kidney recipients in 1995</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1994</td>
+                                <td>Number of kidney recipients in 1994</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1993</td>
+                                <td>Number of kidney recipients in 1993</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1992</td>
+                                <td>Number of kidney recipients in 1992</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1991</td>
+                                <td>Number of kidney recipients in 1991</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1990</td>
+                                <td>Number of kidney recipients in 1990</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1989</td>
+                                <td>Number of kidney recipients in 1989</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1988</td>
+                                <td>Number of kidney recipients in 1988</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td id="kidney_waitlist_additions_cleaned">kidney_waitlist_additions_cleaned</td>
+                                <td>State</td>
+                                <td>State of residence of individual added to the kidney waitlist</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>ABO</td>
+                                <td>Blood type of the individual added to kidney waitlist</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Ethnicity</td>
+                                <td>Ethnicity of the individual added to the kidney waitlist</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>To_Date</td>
+                                <td>Total number of individuals added to the kidney waitlist at the time the data was retrieved (12/2020)</td>
+                                <td>FLOAT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2020</td>
+                                <td>Number of individuals added to the kidney waitlist in 2020</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2019</td>
+                                <td>Number of individuals added to the kidney waitlist in 2019</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2018</td>
+                                <td>Number of individuals added to the kidney waitlist in 2018</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2017</td>
+                                <td>Number of individuals added to the kidney waitlist in 2017</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2016</td>
+                                <td>Number of individuals added to the kidney waitlist in 2016</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2015</td>
+                                <td>Number of individuals added to the kidney waitlist in 2015</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2014</td>
+                                <td>Number of individuals added to the kidney waitlist in 2014</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2013</td>
+                                <td>Number of individuals added to the kidney waitlist in 2013</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2012</td>
+                                <td>Number of individuals added to the kidney waitlist in 2012</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2011</td>
+                                <td>Number of individuals added to the kidney waitlist in 2011</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2010</td>
+                                <td>Number of individuals added to the kidney waitlist in 2010</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2009</td>
+                                <td>Number of individuals added to the kidney waitlist in 2009</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2008</td>
+                                <td>Number of individuals added to the kidney waitlist in 2008</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2007</td>
+                                <td>Number of individuals added to the kidney waitlist in 2007</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2006</td>
+                                <td>Number of individuals added to the kidney waitlist in 2006</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2005</td>
+                                <td>Number of individuals added to the kidney waitlist in 2005</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2004</td>
+                                <td>Number of individuals added to the kidney waitlist in 2004</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2003</td>
+                                <td>Number of individuals added to the kidney waitlist in 2003</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2002</td>
+                                <td>Number of individuals added to the kidney waitlist in 2002</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2001</td>
+                                <td>Number of individuals added to the kidney waitlist in 2001</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2000</td>
+                                <td>Number of individuals added to the kidney waitlist in 2000</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1999</td>
+                                <td>Number of individuals added to the kidney waitlist in 1999</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1998</td>
+                                <td>Number of individuals added to the kidney waitlist in 1998</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1997</td>
+                                <td>Number of individuals added to the kidney waitlist in 1997</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1996</td>
+                                <td>Number of individuals added to the kidney waitlist in 1996</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1995</td>
+                                <td>Number of individuals added to the kidney waitlist in 1995</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td id="transplant_state_heart_cleaned">transplant_state_heart_cleaned</td>
+                                <td>State</td>
+                                <td>State where heart transplant took place</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2020</td>
+                                <td>Number of heart transplants in 2020</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2019</td>
+                                <td>Number of heart transplants in 2019</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2018</td>
+                                <td>Number of heart transplants in 2018</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2017</td>
+                                <td>Number of heart transplants in 2017</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2016</td>
+                                <td>Number of heart transplants in 2016</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2015</td>
+                                <td>Number of heart transplants in 2015</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2014</td>
+                                <td>Number of heart transplants in 2014</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2013</td>
+                                <td>Number of heart transplants in 2013</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2012</td>
+                                <td>Number of heart transplants in 2012</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2011</td>
+                                <td>Number of heart transplants in 2011</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2010</td>
+                                <td>Number of heart transplants in 2010</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2009</td>
+                                <td>Number of heart transplants in 2009</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2008</td>
+                                <td>Number of heart transplants in 2008</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2007</td>
+                                <td>Number of heart transplants in 2007</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2006</td>
+                                <td>Number of heart transplants in 2006</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2005</td>
+                                <td>Number of heart transplants in 2005</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2004</td>
+                                <td>Number of heart transplants in 2004</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2003</td>
+                                <td>Number of heart transplants in 2003</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2002</td>
+                                <td>Number of heart transplants in 2002</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2001</td>
+                                <td>Number of heart transplants in 2001</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2000</td>
+                                <td>Number of heart transplants in 2000</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1999</td>
+                                <td>Number of heart transplants in 1999</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1998</td>
+                                <td>Number of heart transplants in 1998</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1997</td>
+                                <td>Number of heart transplants in 1997</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1996</td>
+                                <td>Number of heart transplants in 1996</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1995</td>
+                                <td>Number of heart transplants in 1995</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1994</td>
+                                <td>Number of heart transplants in 1994</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1993</td>
+                                <td>Number of heart transplants in 1993</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1992</td>
+                                <td>Number of heart transplants in 1992</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1991</td>
+                                <td>Number of heart transplants in 1991</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1990</td>
+                                <td>Number of heart transplants in 1990</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1989</td>
+                                <td>Number of heart transplants in 1989</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1988</td>
+                                <td>Number of heart transplants in 1988</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td id="transplant_state_kidney_cleaned">transplant_state_kidney_cleaned</td>
+                                <td>State</td>
+                                <td>State where kidney transplant took place</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2020</td>
+                                <td>Number of kidney transplants in 2020</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2019</td>
+                                <td>Number of kidney transplants in 2019</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2018</td>
+                                <td>Number of kidney transplants in 2018</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2017</td>
+                                <td>Number of kidney transplants in 2017</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2016</td>
+                                <td>Number of kidney transplants in 2016</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2015</td>
+                                <td>Number of kidney transplants in 2015</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2014</td>
+                                <td>Number of kidney transplants in 2014</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2013</td>
+                                <td>Number of kidney transplants in 2013</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2012</td>
+                                <td>Number of kidney transplants in 2012</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2011</td>
+                                <td>Number of kidney transplants in 2011</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2010</td>
+                                <td>Number of kidney transplants in 2010</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2009</td>
+                                <td>Number of kidney transplants in 2009</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2008</td>
+                                <td>Number of kidney transplants in 2008</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2007</td>
+                                <td>Number of kidney transplants in 2007</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2006</td>
+                                <td>Number of kidney transplants in 2006</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2005</td>
+                                <td>Number of kidney transplants in 2005</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2004</td>
+                                <td>Number of kidney transplants in 2004</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2003</td>
+                                <td>Number of kidney transplants in 2003</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2002</td>
+                                <td>Number of kidney transplants in 2002</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2001</td>
+                                <td>Number of kidney transplants in 2001</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2000</td>
+                                <td>Number of kidney transplants in 2000</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1999</td>
+                                <td>Number of kidney transplants in 1999</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1998</td>
+                                <td>Number of kidney transplants in 1998</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1997</td>
+                                <td>Number of kidney transplants in 1997</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1996</td>
+                                <td>Number of kidney transplants in 1996</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1995</td>
+                                <td>Number of kidney transplants in 1995</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1994</td>
+                                <td>Number of kidney transplants in 1994</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1993</td>
+                                <td>Number of kidney transplants in 1993</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1992</td>
+                                <td>Number of kidney transplants in 1992</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1991</td>
+                                <td>Number of kidney transplants in 1991</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1990</td>
+                                <td>Number of kidney transplants in 1990</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1989</td>
+                                <td>Number of kidney transplants in 1989</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1988</td>
+                                <td>Number of kidney transplants in 1988</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                                <td id="transplant_state_kidney_cleaned">transplant_state_kidney_cleaned</td>
+                                <td>State</td>
+                                <td>State where kidney transplant took place</td>
+                                <td>VARCHAR</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2020</td>
+                                <td>Number of kidney transplants in 2020</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2019</td>
+                                <td>Number of kidney transplants in 2019</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2018</td>
+                                <td>Number of kidney transplants in 2018</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2017</td>
+                                <td>Number of kidney transplants in 2017</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2016</td>
+                                <td>Number of kidney transplants in 2016</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2015</td>
+                                <td>Number of kidney transplants in 2015</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2014</td>
+                                <td>Number of kidney transplants in 2014</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2013</td>
+                                <td>Number of kidney transplants in 2013</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2012</td>
+                                <td>Number of kidney transplants in 2012</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2011</td>
+                                <td>Number of kidney transplants in 2011</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2010</td>
+                                <td>Number of kidney transplants in 2010</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2009</td>
+                                <td>Number of kidney transplants in 2009</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2008</td>
+                                <td>Number of kidney transplants in 2008</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2007</td>
+                                <td>Number of kidney transplants in 2007</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2006</td>
+                                <td>Number of kidney transplants in 2006</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2005</td>
+                                <td>Number of kidney transplants in 2005</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2004</td>
+                                <td>Number of kidney transplants in 2004</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2003</td>
+                                <td>Number of kidney transplants in 2003</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2002</td>
+                                <td>Number of kidney transplants in 2002</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2001</td>
+                                <td>Number of kidney transplants in 2001</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>2000</td>
+                                <td>Number of kidney transplants in 2000</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1999</td>
+                                <td>Number of kidney transplants in 1999</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1998</td>
+                                <td>Number of kidney transplants in 1998</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1997</td>
+                                <td>Number of kidney transplants in 1997</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1996</td>
+                                <td>Number of kidney transplants in 1996</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1995</td>
+                                <td>Number of kidney transplants in 1995</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1994</td>
+                                <td>Number of kidney transplants in 1994</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1993</td>
+                                <td>Number of kidney transplants in 1993</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1992</td>
+                                <td>Number of kidney transplants in 1992</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1991</td>
+                                <td>Number of kidney transplants in 1991</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1990</td>
+                                <td>Number of kidney transplants in 1990</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1989</td>
+                                <td>Number of kidney transplants in 1989</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1988</td>
+                                <td>Number of kidney transplants in 1988</td>
+                                <td>INT</td>
+                                <td>N/A</td>
+                                <td>No</td>
+                            </tr>
+                        <tr>
+                            <td id="transplant_state_liver_cleaned">transplant_state_liver_cleaned</td>
+                            <td>State</td>
+                            <td>State where liver transplant took place</td>
+                            <td>VARCHAR</td>
+                            <td>50</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2020</td>
+                            <td>Number of liver transplants in 2020</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2019</td>
+                            <td>Number of liver transplants in 2019</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2018</td>
+                            <td>Number of liver transplants in 2018</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2017</td>
+                            <td>Number of liver transplants in 2017</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2016</td>
+                            <td>Number of liver transplants in 2016</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2015</td>
+                            <td>Number of liver transplants in 2015</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2014</td>
+                            <td>Number of liver transplants in 2014</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2013</td>
+                            <td>Number of liver transplants in 2013</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2012</td>
+                            <td>Number of liver transplants in 2012</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2011</td>
+                            <td>Number of liver transplants in 2011</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2010</td>
+                            <td>Number of liver transplants in 2010</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2009</td>
+                            <td>Number of liver transplants in 2009</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2008</td>
+                            <td>Number of liver transplants in 2008</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2007</td>
+                            <td>Number of liver transplants in 2007</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2006</td>
+                            <td>Number of liver transplants in 2006</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2005</td>
+                            <td>Number of liver transplants in 2005</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2004</td>
+                            <td>Number of liver transplants in 2004</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2003</td>
+                            <td>Number of liver transplants in 2003</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2002</td>
+                            <td>Number of liver transplants in 2002</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2001</td>
+                            <td>Number of liver transplants in 2001</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2000</td>
+                            <td>Number of liver transplants in 2000</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1999</td>
+                            <td>Number of liver transplants in 1999</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1998</td>
+                            <td>Number of liver transplants in 1998</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1997</td>
+                            <td>Number of liver transplants in 1997</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1996</td>
+                            <td>Number of liver transplants in 1996</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1995</td>
+                            <td>Number of liver transplants in 1995</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1994</td>
+                            <td>Number of liver transplants in 1994</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1993</td>
+                            <td>Number of liver transplants in 1993</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1992</td>
+                            <td>Number of liver transplants in 1992</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1991</td>
+                            <td>Number of liver transplants in 1991</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1990</td>
+                            <td>Number of liver transplants in 1990</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1989</td>
+                            <td>Number of liver transplants in 1989</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1988</td>
+                            <td>Number of liver transplants in 1988</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td id="transplant_state_lung_cleaned">transplant_state_lung_cleaned</td>
+                            <td>State</td>
+                            <td>State where lung transplant took place</td>
+                            <td>VARCHAR</td>
+                            <td>50</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2020</td>
+                            <td>Number of lung transplants in 2020</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2019</td>
+                            <td>Number of lung transplants in 2019</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2018</td>
+                            <td>Number of lung transplants in 2018</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2017</td>
+                            <td>Number of lung transplants in 2017</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2016</td>
+                            <td>Number of lung transplants in 2016</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2015</td>
+                            <td>Number of lung transplants in 2015</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2014</td>
+                            <td>Number of lung transplants in 2014</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2013</td>
+                            <td>Number of lung transplants in 2013</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2012</td>
+                            <td>Number of lung transplants in 2012</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2011</td>
+                            <td>Number of lung transplants in 2011</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2010</td>
+                            <td>Number of lung transplants in 2010</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2009</td>
+                            <td>Number of lung transplants in 2009</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2008</td>
+                            <td>Number of lung transplants in 2008</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2007</td>
+                            <td>Number of lung transplants in 2007</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2006</td>
+                            <td>Number of lung transplants in 2006</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2005</td>
+                            <td>Number of lung transplants in 2005</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2004</td>
+                            <td>Number of lung transplants in 2004</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2003</td>
+                            <td>Number of lung transplants in 2003</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2002</td>
+                            <td>Number of lung transplants in 2002</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2001</td>
+                            <td>Number of lung transplants in 2001</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2000</td>
+                            <td>Number of lung transplants in 2000</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1999</td>
+                            <td>Number of lung transplants in 1999</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1998</td>
+                            <td>Number of lung transplants in 1998</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1997</td>
+                            <td>Number of lung transplants in 1997</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1996</td>
+                            <td>Number of lung transplants in 1996</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1995</td>
+                            <td>Number of lung transplants in 1995</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1994</td>
+                            <td>Number of lung transplants in 1994</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1993</td>
+                            <td>Number of lung transplants in 1993</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1992</td>
+                            <td>Number of lung transplants in 1992</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1991</td>
+                            <td>Number of lung transplants in 1991</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1990</td>
+                            <td>Number of lung transplants in 1990</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1989</td>
+                            <td>Number of lung transplants in 1989</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1988</td>
+                            <td>Number of lung transplants in 1988</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td id="waitinglist_state_cleaned">waitinglist_state_cleaned</td>
+                            <td>State</td>
+                            <td>State of residence of individual on the waiting list</td>
+                            <td>VARCHAR</td>
+                            <td>50</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Kidney</td>
+                            <td>Number of individuals on waitlist waiting for a kidney</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Liver</td>
+                            <td>Number of individuals on waitlist waiting for a liver</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Pancreas</td>
+                            <td>Number of individuals on waitlist waiting for a pancreas</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Kidney_Pancreas</td>
+                            <td>Number of individuals on waitlist waiting for a kidney and a pancreas</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Heart</td>
+                            <td>Number of individuals on waitlist waiting for a heart</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Lung</td>
+                            <td>Number of individuals on waitlist waiting for a lung</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Heart_Lung</td>
+                            <td>Number of individuals on waitlist waiting for a heart and a lung</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Intestine</td>
+                            <td>Number of individuals on waitlist waiting for an intestine</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Abdominal_Wall</td>
+                            <td>Number of individuals on waitlist waiting for an abdominal wall</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Head_Neck</td>
+                            <td>Number of individuals on waitlist waiting for organs relating to the head and neck</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Uterus</td>
+                            <td>Number of individuals on waitlist waiting for a uterus</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Upper_Limb_Bilateral</td>
+                            <td>Number of individuals on waitlist waiting for bilateral upper limb transplant</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Upper_Limb_Unilateral</td>
+                            <td>Number of individuals on waitlist waiting for unilateral upper limb transplant</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Face_Scalp</td>
+                            <td>Number of individuals on waitlist waiting for a face/scalp transplant</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Trachea</td>
+                            <td>Number of individuals on waitlist waiting for a trachea</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td id="waiting_time_cleaned">waiting_time_cleaned</td>
+                            <td>Wait_Time</td>
+                            <td>Wait time ranges for individuals on the waitlist (e.g., < 30 days, 30 days to < 90 days)</td>
+                            <td>VARCHAR</td>
+                            <td>50</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>All_Organs</td>
+                            <td>Number of individuals who waited the indicated time range across all organs</td>
+                            <td>VARCHAR</td>
+                            <td>50</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Kidney</td>
+                            <td>Number of individuals who waited the indicated time range for a kidney</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Liver</td>
+                            <td>Number of individuals who waited the indicated time range for a liver</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Pancreas</td>
+                            <td>Number of individuals who waited the indicated time range for a pancreas</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Kidney_Pancreas</td>
+                            <td>Number of individuals who waited the indicated time range for a kidney and a pancreas</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Heart</td>
+                            <td>Number of individuals who waited the indicated time range for a heart</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Lung</td>
+                            <td>Number of individuals who waited the indicated time range for a lung</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Heart_Lung</td>
+                            <td>Number of individuals who waited the indicated time range for a heart and a lung</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Intestine</td>
+                            <td>Number of individuals who waited the indicated time range for an intestine</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Abdominal_Wall</td>
+                            <td>Number of individuals who waited the indicated time range for an abdominal wall</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Head_Neck</td>
+                            <td>Number of individuals who waited the indicated time range for organs relating to the head and neck</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Uterus</td>
+                            <td>Number of individuals who waited the indicated time range for a uterus</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Upper_Limb_Bilateral</td>
+                            <td>Number of individuals who waited the indicated time range for bilateral upper limb transplant</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Upper_Limb_Unilateral</td>
+                            <td>Number of individuals who waited the indicated time range for unilateral upper limb transplant</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Face_Scalp</td>
+                            <td>Number of individuals who waited the indicated time range for a face/scalp transplant</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Trachea</td>
+                            <td>Number of individuals who waited the indicated time range for a trachea</td>
+                            <td>INT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td id="diabetes_state_cleaned">diabetes_state_cleaned</td>
+                            <td>State</td>
+                            <td>State where diabetes rate is given</td>
+                            <td>VARCHAR</td>
+                            <td>50</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1995</td>
+                            <td>Diabetes rate in 1995</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1996</td>
+                            <td>Diabetes rate in 1996</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1997</td>
+                            <td>Diabetes rate in 1997</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1998</td>
+                            <td>Diabetes rate in 1998</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1999</td>
+                            <td>Diabetes rate in 1999</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2000</td>
+                            <td>Diabetes rate in 2000</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2001</td>
+                            <td>Diabetes rate in 2001</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2002</td>
+                            <td>Diabetes rate in 2002</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2003</td>
+                            <td>Diabetes rate in 2003</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2004</td>
+                            <td>Diabetes rate in 2004</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2005</td>
+                            <td>Diabetes rate in 2005</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2006</td>
+                            <td>Diabetes rate in 2006</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2007</td>
+                            <td>Diabetes rate in 2007</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2008</td>
+                            <td>Diabetes rate in 2008</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2009</td>
+                            <td>Diabetes rate in 2009</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2010</td>
+                            <td>Diabetes rate in 2010</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2011</td>
+                            <td>Diabetes rate in 2011</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2012</td>
+                            <td>Diabetes rate in 2012</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2013</td>
+                            <td>Diabetes rate in 2013</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2014</td>
+                            <td>Diabetes rate in 2014</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2015</td>
+                            <td>Diabetes rate in 2015</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2016</td>
+                            <td>Diabetes rate in 2016</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2017</td>
+                            <td>Diabetes rate in 2017</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2018</td>
+                            <td>Diabetes rate in 2018</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2019</td>
+                            <td>Diabetes rate in 2019</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td id="obesity_state_cleaned">obesity_state_cleaned</td>
+                            <td>State</td>
+                            <td>State where obesity rate is given</td>
+                            <td>VARCHAR</td>
+                            <td>50</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1995</td>
+                            <td>Obesity rate in 1995</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1996</td>
+                            <td>Obesity rate in 1996</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1997</td>
+                            <td>Obesity rate in 1997</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1998</td>
+                            <td>Obesity rate in 1998</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1999</td>
+                            <td>Obesity rate in 1999</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2000</td>
+                            <td>Obesity rate in 2000</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2001</td>
+                            <td>Obesity rate in 2001</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2002</td>
+                            <td>Obesity rate in 2002</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2003</td>
+                            <td>Obesity rate in 2003</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2004</td>
+                            <td>Obesity rate in 2004</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2005</td>
+                            <td>Obesity rate in 2005</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2006</td>
+                            <td>Obesity rate in 2006</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2007</td>
+                            <td>Obesity rate in 2007</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2008</td>
+                            <td>Obesity rate in 2008</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2009</td>
+                            <td>Obesity rate in 2009</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2010</td>
+                            <td>Obesity rate in 2010</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2011</td>
+                            <td>Obesity rate in 2011</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2012</td>
+                            <td>Obesity rate in 2012</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2013</td>
+                            <td>Obesity rate in 2013</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2014</td>
+                            <td>Obesity rate in 2014</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2015</td>
+                            <td>Obesity rate in 2015</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2016</td>
+                            <td>Obesity rate in 2016</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2017</td>
+                            <td>Obesity rate in 2017</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2018</td>
+                            <td>Obesity rate in 2018</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2019</td>
+                            <td>Obesity rate in 2019</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td id="overdose_state_cleaned">overdose_state_cleaned</td>
+                            <td>State</td>
+                            <td>State where opioid overdoses per 100,000 is given</td>
+                            <td>VARCHAR</td>
+                            <td>50</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1999</td>
+                            <td>Opioid overdoses per 100,000 in 1999</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2000</td>
+                            <td>Opioid overdoses per 100,000 in 2000</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2001</td>
+                            <td>Opioid overdoses per 100,000 in 2001</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2002</td>
+                            <td>Opioid overdoses per 100,000 in 2002</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2003</td>
+                            <td>Opioid overdoses per 100,000 in 2003</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2004</td>
+                            <td>Opioid overdoses per 100,000 in 2004</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2005</td>
+                            <td>Opioid overdoses per 100,000 in 2005</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2006</td>
+                            <td>Opioid overdoses per 100,000 in 2006</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2007</td>
+                            <td>Opioid overdoses per 100,000 in 2007</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2008</td>
+                            <td>Opioid overdoses per 100,000 in 2008</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2009</td>
+                            <td>Opioid overdoses per 100,000 in 2009</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2010</td>
+                            <td>Opioid overdoses per 100,000 in 2010</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2011</td>
+                            <td>Opioid overdoses per 100,000 in 2011</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2012</td>
+                            <td>Opioid overdoses per 100,000 in 2012</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2013</td>
+                            <td>Opioid overdoses per 100,000 in 2013</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2014</td>
+                            <td>Opioid overdoses per 100,000 in 2014</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2015</td>
+                            <td>Opioid overdoses per 100,000 in 2015</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2016</td>
+                            <td>Opioid overdoses per 100,000 in 2016</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2017</td>
+                            <td>Opioid overdoses per 100,000 in 2017</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2018</td>
+                            <td>Opioid overdoses per 100,000 in 2018</td>
+                            <td>FLOAT</td>
+                            <td>N/A</td>
+                            <td>No</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+				</div>
+			</section>
+            <!-- <div id="toTop" class="button">Back to Top</div> -->
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<section class="links">
+						<div class="row">
+						</div>
+					</section>
+						<center>
+						<p>Final Project by Leah Brady, Ravindra Patel, Robert Payne, and Tana Zimmer<br>
+						CWRU Data Analytics and Visualization Bootcamp 2020-2021</p>
+						</center>			
+						<div class="row">
+						<div class="8u 12u$(medium)">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li>
+								<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+								<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+        <script src="static/js/select_anchor.js"></script>
+	</body>
+</html>
