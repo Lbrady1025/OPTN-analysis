@@ -20,7 +20,16 @@
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
-		</noscript>
+        </noscript>
+        <style>
+            #toTop {
+                padding: 5px;
+                position: fixed;
+                bottom: 5px;
+                right: 5px;
+                display: none;
+            }
+        </style>
 	</head>
 	<body class="landing">
 
@@ -3594,7 +3603,23 @@
 
 				</div>
 			</section>
-            <!-- <div id="toTop" class="button">Back to Top</div> -->
+            <button onclick="topFunction()" id="toTop" class="button">Back to Top</button>
+            <script>
+                var topButton = document.getElementById("toTop");
+                window.onscroll = function()
+                    {scrollFunction()};
+                function scrollFunction() {
+                    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                        topButton.style.display = "block";
+                    } else {
+                        topButton.style.display = "none";
+                    }
+                }
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="container">
