@@ -7,49 +7,49 @@
         var sum_id = document.getElementById('sum_image');
 
         if (full_id.src.match("images/Alabama_full.png")) {
-            op_id.src = "images/Alabama_opioid.png";
+            op_id.src = "images/Alabama_overdose.png";
             dia_id.src = "images/Alabama_diabetes.png";
             sum_id.src = "images/Alabama_summary.png";
             obe_id.src = "images/Alabama_obesity.png";
         }
         else if (full_id.src.match("images/Arizona_full.png")) {
-            op_id.src = "images/Arizona_opioid.png";
+            op_id.src = "images/Arizona_overdose.png";
             dia_id.src = "images/Arizona_diabetes.png";
             sum_id.src = "images/Arizona_summary.png";
             obe_id.src = "images/Arizona_obesity.png";
         }
         else if (full_id.src.match("images/Arkansas_full.png")) {
-            op_id.src = "images/Arkansas_opioid.png";
+            op_id.src = "images/Arkansas_overdose.png";
             dia_id.src = "images/Arkansas_diabetes.png";
             sum_id.src = "images/Arkansas_summary.png";
             obe_id.src = "images/Arkansas_obesity.png";
         }
         else if (full_id.src.match("images/California_full.png")) {
-            op_id.src = "images/California_opioid.png";
+            op_id.src = "images/California_overdose.png";
             dia_id.src = "images/California_diabetes.png";
             sum_id.src = "images/California_summary.png";
             obe_id.src = "images/Calfironia_obesity.png";
         }
         else if (full_id.src.match("images/Colorado_full.png")) {
-            op_id.src = "images/Colorado_opioid.png";
+            op_id.src = "images/Colorado_overdose.png";
             dia_id.src = "images/Colorado_diabetes.png";
             sum_id.src = "images/Colorado_summary.png";
             obe_id.src = "images/Colorado_obesity.png";
         }
         else if (full_id.src.match("images/Connecticut_full.png")) {
-            op_id.src = "images/Connecticut_opioid.png";
+            op_id.src = "images/Connecticut_overdose.png";
             dia_id.src = "images/Connecticut_diabetes.png";
             sum_id.src = "images/Connecticut_summary.png";
             obe_id.src = "images/Connecticut_obesity.png";
         }
         else if (full_id.src.match("images/Delaware_full.png")) {
-            op_id.src = "images/Delaware_opioid.png";
+            op_id.src = "images/Delaware_overdose.png";
             dia_id.src = "images/Delaware_diabetes.png";
             sum_id.src = "images/Delaware_summary.png";
             obe_id.src = "images/Delaware_obesity.png";
         }
         else if (full_id.src.match("images/Florida_full.png")) {
-            op_id.src = "images/Florida_opioid.png";
+            op_id.src = "images/Florida_overdose.png";
             dia_id.src = "images/Florida_diabetes.png";
             sum_id.src = "images/Florida_summary.png";
             obe_id.src = "images/Florida_obesity.png";
