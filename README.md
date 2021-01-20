@@ -50,7 +50,7 @@ plt.hlines(y=0, xmin=y.min(), xmax=y.max())
 plt.title("Residual Plot")
 #End
 ````
-ADD RESIDUAL PLOT
+![](https://github.com/Lbrady1025/OPTN-analysis/blob/main/images/Nattional_Residual_Plot.png)
 ````
 #R2 of original model
 r_sq = model.score(X, y)
@@ -77,7 +77,7 @@ plt.savefig('images/National_full.png', dpi=100, facecolor='w', edgecolor='w',
         transparent=False, bbox_inches=None, pad_inches=0.2, metadata=None)
 plt.show()
 ````
-SHOW NATIONAL FULL
+![](https://github.com/Lbrady1025/OPTN-analysis/blob/main/images/National_full.png)
 ````
 model_lin = sm.OLS.from_formula("Total_Adj ~ Diabetes + Obesity + Overdose + Pct_O", data=df)
 result_lin = model_lin.fit()
@@ -92,7 +92,7 @@ plt.savefig('images/National_diabetes.png', dpi=100, facecolor='w', edgecolor='w
         orientation='portrait', format=None,
         transparent=False, bbox_inches=None, pad_inches=0.2, metadata=None)
 ````
-SHOW NATIONAL DIABETES
+![](https://github.com/Lbrady1025/OPTN-analysis/blob/main/images/National_diabetes.png)
 ````
 sns.regplot(X[('Obesity')],y)
 plt.title('Obesity % vs. Waitlist')
@@ -102,7 +102,7 @@ plt.savefig('images/National_obesity.png', dpi=100, facecolor='w', edgecolor='w'
         orientation='portrait', format=None,
         transparent=False, bbox_inches=None, pad_inches=0.2, metadata=None)
 ````
-SHOW NATIONAL OBESITY
+![](https://github.com/Lbrady1025/OPTN-analysis/blob/main/images/National_obesity.png)
 ````
 
 sns.regplot(X[('Overdose')],y)
@@ -113,7 +113,7 @@ plt.savefig('images/California_overdose.png', dpi=100, facecolor='w', edgecolor=
         orientation='portrait', format=None,
         transparent=False, bbox_inches=None, pad_inches=0.2, metadata=None)
 ````
-SHOW NATIONAL OVERDOSE
+![](https://github.com/Lbrady1025/OPTN-analysis/blob/main/images/National_overdose.png)
 ````
 sns.regplot(X[('Pct_O')],y)
 plt.xlabel('Percent O Blood-Type')
@@ -123,7 +123,7 @@ plt.savefig('images/California_pct_O.png', dpi=100, facecolor='w', edgecolor='w'
         orientation='portrait', format=None,
         transparent=False, bbox_inches=None, pad_inches=0.2, metadata=None)
 ````
-SHOW NATIONAL PERCENT O
+![](https://github.com/Lbrady1025/OPTN-analysis/blob/main/images/National_pct_O.png)
 ````
 coefficients = pd.concat([pd.DataFrame(X.columns),pd.DataFrame(np.transpose(model.coef_))], axis = 1)
 coefficients_transposed = coefficients.T
@@ -141,7 +141,7 @@ summary_df['Training Score'] = summary_df['Training Score'].round(decimals=4)
 summary_df['Test Score'] = summary_df['Test Score'].round(decimals=4)
 summary_df = summary_df[['R2','Training Score','Test Score','Intercept','Coef_Diabetes','Coef_Obesity','Coef_Overdose','Coef_Pct_O','Last Waitlist','Forecast based on Natl Avg']]
 ````
-SHOW SUMMARY NATIONAL
+![](https://github.com/Lbrady1025/OPTN-analysis/blob/main/images/National_summary.png)
 
 
 
