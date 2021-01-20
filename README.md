@@ -1,6 +1,8 @@
 # OPTN-analysis
 #### CWRU Data Analytics Bootcamp Final Project. Uses machine learning to predict wait times for kidney transplants based on data from the Organ Procurement and Transplantation Network (OPTN)
 
+![](images/Organ.png)
+
 ### Team Members
 
 Leah Brady
