@@ -3,7 +3,7 @@
 
 ![](images/Organ.png)
 
-### Team Members
+### Team Members and contributions
 
 Leah Brady
   * AWS
