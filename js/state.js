@@ -28,7 +28,7 @@
             op_id.src = "images/California_overdose.png";
             dia_id.src = "images/California_diabetes.png";
             sum_id.src = "images/California_summary.png";
-            obe_id.src = "images/Calfornia_obesity.png";
+            obe_id.src = "images/California_obesity.png";
         }
         else if (full_id.src.match("images/Colorado_full.png")) {
             op_id.src = "images/Colorado_overdose.png";
