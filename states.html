@@ -33,7 +33,7 @@
 					<ul>
 						<li><a href="visualizations.html">Visualizations</a></li>
 						<li><a href="data.html">Data Sources</a></li>
-						<li><a href="https://www.donatelife.net/register" target="_blank">Make A Difference</a></li>
+						<li><a href="donate.html">Make A Difference</a></li>
 						<li><a href="https://github.com/Lbrady1025/OPTN-analysis" target="_blank" class="button special">GitHub</a></li>
 					</ul>
 				</nav>
@@ -51,7 +51,7 @@
 			<center>
 			<br><br>
 			<h2>Search below to see projections for your state.</h2>
-			<p>See projections for diabetes, obesity, and kidney transplant waitlist numbers.</p>
+			<p>See projections for diabetes, obesity, opiod overdoses and kidney transplant waitlist numbers.</p>
 			
 			<!-- Drop Down -->
 			<select onchange="$('#full_image').attr('src', this.options[this.selectedIndex].value); swapimages()">
@@ -107,11 +107,15 @@
 			</select>
 			  
 			<br><br>
-            <img id="full_image" class="profile" src="images/National_full.png" >
+			
+			<img id="sum_image" class="profile" src="images/National_summary.png" >
+			<br>
+			<img id="full_image" class="profile" src="images/National_full.png" >
 			<img id="obe_image" class="profile" src="images/National_obesity.png" >
+			<br>
 			<img id="op_image" class="profile" src="images/National_opioid.png" >
 			<img id="dia_image" class="profile" src="images/National_diabetes.png" >
-			<img id="sum_image" class="profile" src="images/National_summary.png" >
+			
 			</center>
 				</div>
 			</section>
