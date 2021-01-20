@@ -1,14 +1,14 @@
 # OPTN-analysis
 ## CWRU Data Analytics Bootcamp Final Project. Uses machine learning to predict wait times for kidney transplants based on data from the Organ Procurement and Transplantation Network (OPTN)
 
+![](images/Organ.png)
+
 ### The Data
 We obtained data for the past 25 years that tracks trends in organ transplant, diabetes, obesity, and opiod overdoses in the US population.  Using this data, we created a maching learning model that will forecast the number of people on the kidney waitlist based on these factors.  Nationally and in most states there is a clear correlation amongst these factors and the number on the kidney waitlist.  Using this model, one can predict how much the kidney waitlist will decrease if obsesity, diabetes, or opiod use is decreased by X%, which could help communities drill down on the most actionable cause to drive waitlist numbers down.  This model will appear to a broad range of people in medical or government positions as a kidney transplant costs $300-400K on average.
 
 The Data has been normalized to population and we chose to focus on kidney recipients with a blood type of O - this accounts for over 50% of the general population and is the most limiting blood type as a recipient.
 
-!(https://github.com/Lbrady1025/OPTN-analysis/blob/main/images/blood_types.jpg)
-
-![](images/Organ.png)
+![](https://github.com/Lbrady1025/OPTN-analysis/blob/main/images/blood_types.jpg)
 
 ### Team Members and contributions
 
