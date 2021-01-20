@@ -8,14 +8,11 @@
 Leah Brady
   * AWS
   * Created Flask app 
-  
-  [See Python file](https://github.com/Lbrady1025/OPTN-analysis/blob/main/app.py)
+    * [See Python file](https://github.com/Lbrady1025/OPTN-analysis/blob/main/app.py)
   * Used Pandas to merge dataframes for input into Machine Learning 
-  
-  [See Jupyter file](https://github.com/Lbrady1025/OPTN-analysis/blob/main/datamerge.ipynb)
+    * [See Jupyter file](https://github.com/Lbrady1025/OPTN-analysis/blob/main/datamerge.ipynb)
   * Composed Data Dictionary with HTML and CSS formatting 
-  
-  [View HTML](https://github.com/Lbrady1025/OPTN-analysis/blob/main/data_dict.html)
+    * [View HTML](https://github.com/Lbrady1025/OPTN-analysis/blob/main/data_dict.html)
   
 Ravindra Patel
   * Gather data
