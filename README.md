@@ -12,6 +12,21 @@ The Data has been normalized to population and we chose to focus on kidney recip
 
 ![](https://github.com/Lbrady1025/OPTN-analysis/blob/main/images/blood_types.jpg)
 
+Results were just released for the complete year 2020. The impact of Covid has brought the waitlist down year over year by -13.6% (from 41k to 36k). Is this an outlier? The change in residual plots confirms that indeed the change is considered an outlier. However, it does not necessarily change the efficacy of the overall model (Please see OLS summary below comparing output based on 2019 and 2020).
+
+![](https://lbrady1025.github.io/OPTN-analysis/images/National_Residual2020_Plot.png)
+
+The conclusion is that although an outlier, the F-tests, p-value, and t-tests do not materially change. However, we performed another test on the trend of waitlist. Using an ARIMA model, we used a 5-year year moving average and forecasted the waitlist trend beginning in 2010 to 2020. The chart below confirms that the 2019 decline should be considered an outlier and the trend of waitlists nationally should not materially decline.
+
+####2019
+![](https://lbrady1025.github.io/OPTN-analysis/images/National2019_OLS.png)
+
+####2020
+![](https://lbrady1025.github.io/OPTN-analysis/images/National2020_OLS.png)
+
+####ARIMA
+![](https://lbrady1025.github.io/OPTN-analysis/images/waitlist_arima.png)
+
 ### The Model and National Outputs
 ````
 #Correlation Matrix
