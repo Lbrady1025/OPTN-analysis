@@ -8,7 +8,7 @@
                             <html lang="en">
                                 <head>
                                     <meta charset="UTF-8">
-                                    <title>Machine Learning Model</title>
+                                    <title>Data Trends</title>
                                     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
                                     <meta name="description" content="" />
                                     <meta name="keywords" content="" />
@@ -32,6 +32,7 @@
                                             <ul>
                                                 <li><a href="visualizations.html">Visualizations</a></li>
                                                 <li><a href="data.html">Data Sources</a></li>
+                                                <li><a href="ML.html">Data Trends</a></li>
                                                 <li><a href="donate.html">Make A Difference</a></li>
                                                 <li><a href="https://github.com/Lbrady1025/OPTN-analysis" target="_blank" class="button special">GitHub</a></li>
                                             </ul>
@@ -41,7 +42,7 @@
                                     <!-- Main -->
                             
                                         <!-- Banner -->
-                                        <section id="databanner">
+                                        <section id="trendbanner">
                                             <h2>Machine Learning</h2>
                                             <p>Learn About Our Model</p>
                                         </section>
@@ -55,8 +56,25 @@
                                                     The Data has been normalized to population and we chose to focus on kidney recipients with a blood type of O - this accounts for about 50% of the general population and is the most limiting blood type as a recipient.
                                                     </p>
                                                     <img src='images/blood_types.jpg'>
+                                                    <p>Results were just released for the complete year 2020.  The impact of Covid has brought the waitlist down year over year by -13.6% (from 41k to 36k).  
+                                                        Is this an outlier?  The change in residual plots confirms that indeed the change is considered an outlier.  However, it does not necessarily change the efficacy of the overall model 
+                                                        (Please see OLS summary below comparing output based on 2019 and 2020).</p>
+                                                    <img src = 'images/National_Residual2020_Plot.png'><br>
+                                                    <p>The conclusion is that although an outlier, the F-tests, p-value, and t-tests do not materially change.  
+                                                        However, we performed another test on the trend of waitlist.  Using an ARIMA model, we used a 5-year year moving average and forecasted the waitlist trend beginning in 2010 to 2020.  
+                                                        The chart below confirms that the 2019 decline should be considered an outlier and the trend of waitlists nationally should not materially decline.</p>
+                                                    
+                                                    <h4>2019</h4>
+                                                        <img src = 'images/National2019_OLS.png'><br>
+                                                    <h4>2020</h4>
+                                                        <img src = 'images/National2020_OLS.png'>   <br>
 
+                                                    <h4>ARIMA</h4>
+                                                        <img src = 'images/waitlist_arima.png'><br><br>
                                                 <h3>The Model and National Outputs</h3>
+
+
+                                     
 <pre><code>
 #Correlation Matrix
 corr_matrix = df[["Diabetes", "Obesity", "Overdose", "Pct_O"]].corr()
