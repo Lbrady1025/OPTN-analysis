@@ -1,27 +1,27 @@
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:              Total_Adj   R-squared:                       0.943
-Model:                            OLS   Adj. R-squared:                  0.932
-Method:                 Least Squares   F-statistic:                     86.65
-Date:                Thu, 21 Jan 2021   Prob (F-statistic):           9.65e-13
-Time:                        15:19:55   Log-Likelihood:                -230.41
-No. Observations:                  26   AIC:                             470.8
-Df Residuals:                      21   BIC:                             477.1
+Dep. Variable:              Total_Adj   R-squared:                       0.966
+Model:                            OLS   Adj. R-squared:                  0.959
+Method:                 Least Squares   F-statistic:                     148.8
+Date:                Thu, 21 Jan 2021   Prob (F-statistic):           4.36e-15
+Time:                        17:20:16   Log-Likelihood:                -223.96
+No. Observations:                  26   AIC:                             457.9
+Df Residuals:                      21   BIC:                             464.2
 Df Model:                           4                                         
 Covariance Type:            nonrobust                                         
 ==============================================================================
                  coef    std err          t      P>|t|      [0.025      0.975]
 ------------------------------------------------------------------------------
-Intercept   2.835e+04   7.14e+04      0.397      0.695    -1.2e+05    1.77e+05
-Diabetes    -744.9644   1159.338     -0.643      0.527   -3155.939    1666.010
-Obesity     1782.0196    372.989      4.778      0.000    1006.346    2557.693
-Overdose    -237.1190    249.138     -0.952      0.352    -755.230     280.992
-Pct_O       -683.1480   1496.354     -0.457      0.653   -3794.986    2428.689
+Intercept   1.192e+04   5.57e+04      0.214      0.833   -1.04e+05    1.28e+05
+Diabetes    -850.2340    904.693     -0.940      0.358   -2731.646    1031.178
+Obesity     1786.7074    291.064      6.139      0.000    1181.408    2392.007
+Overdose    -184.4884    194.416     -0.949      0.353    -588.798     219.821
+Pct_O       -339.5100   1167.685     -0.291      0.774   -2767.843    2088.823
 ==============================================================================
-Omnibus:                       20.320   Durbin-Watson:                   1.623
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):               31.082
-Skew:                          -1.615   Prob(JB):                     1.78e-07
-Kurtosis:                       7.274   Cond. No.                     1.08e+04
+Omnibus:                        3.962   Durbin-Watson:                   1.622
+Prob(Omnibus):                  0.138   Jarque-Bera (JB):                2.484
+Skew:                          -0.727   Prob(JB):                        0.289
+Kurtosis:                       3.426   Cond. No.                     1.08e+04
 ==============================================================================
 
 Warnings:
