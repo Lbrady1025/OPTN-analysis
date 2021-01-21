@@ -156,41 +156,41 @@
             sum_id.src = "images/Nevada_summary.png";
             obe_id.src = "images/Nevada_obesity.png";
         }
-        else if (full_id.src.match("images/NewHampshire_full.png")) {
-            op_id.src = "images/NewHampshire_overdose.png";
-            dia_id.src = "images/NewHampshire_diabetes.png";
-            sum_id.src = "images/NewHampshire_summary.png";
-            obe_id.src = "images/NewHampshire_obesity.png";
+        else if (full_id.src.match("images/New Hampshire_full.png")) {
+            op_id.src = "images/New Hampshire_overdose.png";
+            dia_id.src = "images/New Hampshire_diabetes.png";
+            sum_id.src = "images/New Hampshire_summary.png";
+            obe_id.src = "images/New Hampshire_obesity.png";
         }
-        else if (full_id.src.match("images/NewJersey_full.png")) {
-            op_id.src = "images/NewJersey_overdose.png";
-            dia_id.src = "images/NewJersey_diabetes.png";
-            sum_id.src = "images/NewJersey_summary.png";
-            obe_id.src = "images/NewJersey_obesity.png";
+        else if (full_id.src.match("images/New Jersey_full.png")) {
+            op_id.src = "images/New Jersey_overdose.png";
+            dia_id.src = "images/New Jersey_diabetes.png";
+            sum_id.src = "images/New Jersey_summary.png";
+            obe_id.src = "images/New Jersey_obesity.png";
         }
-        else if (full_id.src.match("images/NewMexico_full.png")) {
-            op_id.src = "images/NewMexico_overdose.png";
-            dia_id.src = "images/NewMexico_diabetes.png";
-            sum_id.src = "images/NewMexico_summary.png";
-            obe_id.src = "images/NewMexico_obesity.png";
+        else if (full_id.src.match("images/New Mexico_full.png")) {
+            op_id.src = "images/New Mexico_overdose.png";
+            dia_id.src = "images/New Mexico_diabetes.png";
+            sum_id.src = "images/New Mexico_summary.png";
+            obe_id.src = "images/New Mexico_obesity.png";
         }
-        else if (full_id.src.match("images/NewYork_full.png")) {
-            op_id.src = "images/NewYork_overdose.png";
-            dia_id.src = "images/NewYork_diabetes.png";
-            sum_id.src = "images/NewYork_summary.png";
-            obe_id.src = "images/NewYork_obesity.png";
+        else if (full_id.src.match("images/New York_full.png")) {
+            op_id.src = "images/New York_overdose.png";
+            dia_id.src = "images/New York_diabetes.png";
+            sum_id.src = "images/New York_summary.png";
+            obe_id.src = "images/New York_obesity.png";
         }
-        else if (full_id.src.match("images/NorthCarolina_full.png")) {
-            op_id.src = "images/NorthCarolina_overdose.png";
-            dia_id.src = "images/NorthCarolina_diabetes.png";
-            sum_id.src = "images/NorthCarolina_summary.png";
-            obe_id.src = "images/NorthCarolina_obesity.png";
+        else if (full_id.src.match("images/North Carolina_full.png")) {
+            op_id.src = "images/North Carolina_overdose.png";
+            dia_id.src = "images/North Carolina_diabetes.png";
+            sum_id.src = "images/North Carolina_summary.png";
+            obe_id.src = "images/North Carolina_obesity.png";
         }
-        else if (full_id.src.match("images/NorthDakota_full.png")) {
-            op_id.src = "images/NorthDakota_overdose.png";
-            dia_id.src = "images/NorthDakota_diabetes.png";
-            sum_id.src = "images/NorthDakota_summary.png";
-            obe_id.src = "images/NorthDakota_obesity.png";
+        else if (full_id.src.match("images/North Dakota_full.png")) {
+            op_id.src = "images/North Dakota_overdose.png";
+            dia_id.src = "images/North Dakota_diabetes.png";
+            sum_id.src = "images/North Dakota_summary.png";
+            obe_id.src = "images/North Dakota_obesity.png";
         }
         else if (full_id.src.match("images/Ohio_full.png")) {
             op_id.src = "images/Ohio_overdose.png";
@@ -222,11 +222,11 @@
             sum_id.src = "images/RhodeIsland_summary.png";
             obe_id.src = "images/RhodeIsland_obesity.png";
         }
-        else if (full_id.src.match("images/SouthCarolina_full.png")) {
-            op_id.src = "images/SouthCarolina_overdose.png";
-            dia_id.src = "images/SouthCarolina_diabetes.png";
-            sum_id.src = "images/SouthCarolina_summary.png";
-            obe_id.src = "images/SouthCarolina_obesity.png";
+        else if (full_id.src.match("images/South Carolina_full.png")) {
+            op_id.src = "images/South Carolina_overdose.png";
+            dia_id.src = "images/South Carolina_diabetes.png";
+            sum_id.src = "images/South Carolina_summary.png";
+            obe_id.src = "images/South Carolina_obesity.png";
         }
         else if (full_id.src.match("images/Tennessee_full.png")) {
             op_id.src = "images/Tennessee_overdose.png";
@@ -264,11 +264,11 @@
             sum_id.src = "images/Washington_summary.png";
             obe_id.src = "images/Washington_obesity.png";
         }
-        else if (full_id.src.match("images/WestVirginiafull.png")) {
-            op_id.src = "images/WestVirginia_overdose.png";
-            dia_id.src = "images/WestVirginia_diabetes.png";
-            sum_id.src = "images/WestVirginia_summary.png";
-            obe_id.src = "images/WestVirginia_obesity.png";
+        else if (full_id.src.match("images/West Virginiafull.png")) {
+            op_id.src = "images/West Virginia_overdose.png";
+            dia_id.src = "images/West Virginia_diabetes.png";
+            sum_id.src = "images/West Virginia_summary.png";
+            obe_id.src = "images/West Virginia_obesity.png";
         }
         else if (full_id.src.match("images/Wisconsin_full.png")) {
             op_id.src = "images/Wisconsin_overdose.png";
