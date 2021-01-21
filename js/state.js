@@ -108,10 +108,10 @@
             sum_id.src = "images/Maine_summary.png";
             obe_id.src = "images/Maine_obesity.png";
         }
-        else if (full_id.src.match("images/Marlyand_full.png")) {
-            op_id.src = "images/Marlyand_overdose.png";
-            dia_id.src = "images/Marlyand_diabetes.png";
-            sum_id.src = "images/Marlyand_summary.png";
+        else if (full_id.src.match("images/Maryland_full.png")) {
+            op_id.src = "images/Maryland_overdose.png";
+            dia_id.src = "images/Maryland_diabetes.png";
+            sum_id.src = "images/Maryland_summary.png";
             obe_id.src = "images/Maryland_obesity.png";
         }
         else if (full_id.src.match("images/Massachusetts_full.png")) {
