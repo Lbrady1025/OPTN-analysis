@@ -183,6 +183,7 @@ Tana Zimmer
     * [See Jupyter file](https://github.com/Lbrady1025/OPTN-analysis/blob/main/csv_to_sql.ipynb)
   * Composed HTML pages with CSS formatting
     * [See Index file](https://github.com/Lbrady1025/OPTN-analysis/blob/main/index.html)
+    *  [View Web Page](https://lbrady1025.github.io/OPTN-analysis/index.html)
   * Used JavaScript to load images based on dropdown "onchange()" 
     * [See JS file](https://github.com/Lbrady1025/OPTN-analysis/blob/main/js/state.js)  
     * [See HTML code that uses JS function](https://github.com/Lbrady1025/OPTN-analysis/blob/main/states.html)
