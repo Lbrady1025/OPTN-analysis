@@ -187,4 +187,4 @@ Tana Zimmer
     * [See HTML code that uses JS function](https://github.com/Lbrady1025/OPTN-analysis/blob/main/states.html)
   
 ## Sources
-[View our Data Sources](https://lbrady1025.github.io/OPTN-analysis/data.html}
+[View our Data Sources](https://lbrady1025.github.io/OPTN-analysis/data.html)
