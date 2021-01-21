@@ -156,8 +156,6 @@ Leah Brady
   * Tableau
     * [See Tableau Workbook](https://github.com/Lbrady1025/OPTN-analysis/blob/main/OPTN%20Analysis.twbx)
   * AWS
-  * Created Flask app 
-    * [See Python file](https://github.com/Lbrady1025/OPTN-analysis/blob/main/app.py)
   * Used Pandas to merge dataframes for input into Machine Learning 
     * [See Jupyter file](https://github.com/Lbrady1025/OPTN-analysis/blob/main/datamerge.ipynb)
   * Composed Data Dictionary with HTML and CSS formatting 
