@@ -162,6 +162,7 @@ Leah Brady
 Ravindra Patel
   * Gather data
   * Gather transplant stats
+  * Organ Donation Facts and resources
   
 Robert Payne
   * Build machine learning model
