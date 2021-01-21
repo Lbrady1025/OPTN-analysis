@@ -165,7 +165,7 @@ Ravindra Patel
   * Gather data
   * Gather transplant stats
   * Organ Donation Facts and resources
-  * Helped with ReamMe, JS and HTML
+  * Helped with ReadMe, JS and HTML
   
 Robert Payne
   * Build machine learning model
