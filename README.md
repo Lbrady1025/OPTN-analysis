@@ -4,7 +4,7 @@
 ![](images/Organ.png)
 
 ### The Data
-We obtained data for the past 25 years that tracks trends in organ transplant, diabetes, obesity, and opiod overdoses in the US population.  Using this data, we created a maching learning model that will forecast the number of people on the kidney waitlist based on these factors.  Nationally and in most states there is a clear correlation amongst these factors and the number on the kidney waitlist.  Using this model, one can predict how much the kidney waitlist will decrease if obsesity, diabetes, or opiod use is decreased by X%, which could help communities drill down on the most actionable cause to drive waitlist numbers down.  This model will appear to a broad range of people in medical or government positions as a kidney transplant costs $300-400K on average.
+We obtained data for the past 25 years that tracks trends in organ transplant, diabetes, obesity, and opiod overdoses in the US population.  Using this data, we created a maching learning model that will forecast the number of people on the kidney waitlist based on these factors.  Nationally and in most states there is a clear correlation amongst these factors and the number on the kidney waitlist.  Using this model, one can predict how much the kidney waitlist will decrease if obsesity, diabetes, or opiod use is decreased by X%, which could help communities drill down on the most actionable cause to drive waitlist numbers down.  This model will appeal to a broad range of people in medical or government fields as a kidney transplant costs $300-400K on average and strains both medical and financial resources.
 
 The Data has been normalized to population and we chose to focus on kidney recipients with a blood type of O - this accounts for about 50% of the general population and is the most limiting blood type as a recipient.
 
@@ -151,6 +151,8 @@ summary_df = summary_df[['R2','Training Score','Test Score','Intercept','Coef_Di
 ### Team Members and contributions
 
 Leah Brady
+  * Tableau
+    * [See Tableau Workbook](https://github.com/Lbrady1025/OPTN-analysis/blob/main/OPTN%20Analysis.twbx)
   * AWS
   * Created Flask app 
     * [See Python file](https://github.com/Lbrady1025/OPTN-analysis/blob/main/app.py)
