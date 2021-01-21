@@ -1,0 +1,30 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              Total_Adj   R-squared:                       0.976
+Model:                            OLS   Adj. R-squared:                  0.971
+Method:                 Least Squares   F-statistic:                     201.2
+Date:                Thu, 21 Jan 2021   Prob (F-statistic):           7.58e-16
+Time:                        16:17:37   Log-Likelihood:                -211.24
+No. Observations:                  25   AIC:                             432.5
+Df Residuals:                      20   BIC:                             438.6
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept   1.542e+04   5.22e+04      0.295      0.771   -9.34e+04    1.24e+05
+Diabetes    -295.7862    774.325     -0.382      0.706   -1911.001    1319.428
+Obesity     1714.3921    249.549      6.870      0.000    1193.841    2234.943
+Overdose    -220.6857    175.039     -1.261      0.222    -585.810     144.439
+Pct_O       -475.4759   1085.971     -0.438      0.666   -2740.772    1789.820
+==============================================================================
+Omnibus:                        0.170   Durbin-Watson:                   0.925
+Prob(Omnibus):                  0.918   Jarque-Bera (JB):                0.324
+Skew:                           0.161   Prob(JB):                        0.850
+Kurtosis:                       2.544   Cond. No.                     1.17e+04
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.17e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
