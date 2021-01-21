@@ -42,6 +42,12 @@
             sum_id.src = "images/Connecticut_summary.png";
             obe_id.src = "images/Connecticut_obesity.png";
         }
+        else if (full_id.src.match("images/DC_full.png")) {
+            op_id.src = "images/DC_overdose.png";
+            dia_id.src = "images/DC_diabetes.png";
+            sum_id.src = "images/DC_summary.png";
+            obe_id.src = "images/DC_obesity.png";
+        }
         else if (full_id.src.match("images/Delaware_full.png")) {
             op_id.src = "images/Delaware_overdose.png";
             dia_id.src = "images/Delaware_diabetes.png";
@@ -264,7 +270,7 @@
             sum_id.src = "images/Washington_summary.png";
             obe_id.src = "images/Washington_obesity.png";
         }
-        else if (full_id.src.match("images/WestVirginiafull.png")) {
+        else if (full_id.src.match("images/WestVirginia_full.png")) {
             op_id.src = "images/WestVirginia_overdose.png";
             dia_id.src = "images/WestVirginia_diabetes.png";
             sum_id.src = "images/WestVirginia_summary.png";
